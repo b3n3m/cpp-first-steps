@@ -3,6 +3,12 @@
 
 using namespace std;
 
+int factorial(int n) {
+  int result = 1;
+  for (int i = 2; i <= n; ++i) result *= i;
+  return result;
+}
+
 int main(int argc, char** argv) {
   if (argc < 2) {
     cout << "usage:" << '\n' << argv[0] << " <integer> [<integer>...]\n";
@@ -17,8 +23,7 @@ int main(int argc, char** argv) {
       continue;
     }
 
-    int result = 1;
-    for (int i = 2; i <= n; ++i) result *= i;
+    const int result = factorial(n);
 
     cout << n << "! = " << result << '\n';
   }
