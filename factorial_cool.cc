@@ -12,6 +12,10 @@ int main(int argc, char** argv) {
     stringstream input{argv[i]};
     int n;
     input >> n;
+    if (input.fail() || !input.eof()) {
+      cout << "Argument '" << argv[i] << "' has wrong format!\n";
+      continue;
+    }
 
     int result = 1;
     for (int i = 2; i <= n; ++i) result *= i;
