@@ -1,5 +1,7 @@
 *
 
 !factorial_project
+!fibonacci_project
+
 !*.cc
 !.gitignore
