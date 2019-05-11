@@ -5,15 +5,17 @@ add_library(fibonacci
   fibonacci.hpp
   fibonacci.cpp
 )
+
 target_include_directories(fibonacci
   PUBLIC
     .
-  )
+)
 
 add_executable(main
   main.cpp
-  )
+)
 
 target_link_libraries(main
   PRIVATE
-    fibonacci)
+    fibonacci
+)
