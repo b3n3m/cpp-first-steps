@@ -2,6 +2,7 @@
 
 !factorial_project
 !fibonacci_project
+!rational_project
 
 !*.cc
 !.gitignore
